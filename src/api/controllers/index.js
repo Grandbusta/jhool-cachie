@@ -4,7 +4,6 @@ const search = async (req, res) => {
   try {
     const search_query = req.body.search_query
     addKeywords(search_query)
-    console.log(keywords)
     return res.status(200).json({ status: 'ok' })
   } catch (error) {
     console.error(error)
